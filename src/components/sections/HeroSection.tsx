@@ -25,7 +25,8 @@ export function HeroSection() {
           <a href="/Aniket_Tiwari_Resume.pdf" download="Aniket_Tiwari_Resume.pdf">
              <Button size="lg" variant="outline">
                 <Download className="mr-2 h-5 w-5" />
-                Download Resume
+               c Download Resume
+               cn Download Resume
              </Button>
           </a>
         </div>
