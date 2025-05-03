@@ -22,7 +22,7 @@ export function HeroSection() {
             </Button>
           </Link>
            {/* TODO: Add actual resume file to public/ directory */}
-          <a href="/Aniket_Tiwari_Resume.pdf" download="Aniket_Tiwari_Resume.pdf">
+          <a href="port\public\Resumemodified.pdf" download="Aniket_Tiwari_Resume.pdf">
              <Button size="lg" variant="outline">
                 <Download className="mr-2 h-5 w-5" />
                c Download Resume
@@ -34,7 +34,7 @@ export function HeroSection() {
        {/* Profile Picture Section */}
        <div className="flex items-center justify-center aspect-square p-4 md:p-8">
          <Image
-            src="/profile-photo.jpg" // Path relative to the 'public' directory
+            src="public\profileimg.jpg" // Path relative to the 'public' directory
             alt="Aniket Tiwari Profile Photo"
             width={500} // Adjust width as needed
             height={500} // Adjust height as needed
