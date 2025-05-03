@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { ExternalLink, Github } from 'lucide-react';
 import { projectsData, Project } from '@/data/projects'; // Import project data
 
-const skills = ["All", "HTML", "CSS", "TypeScript", "JavaScript", "TailwindCSS", "Python"];
+// Removed Python from skills filter
+const skills = ["All", "HTML", "CSS", "TypeScript", "JavaScript", "TailwindCSS", "React", "Next.js"];
 
 export function ProjectsSection() {
   const [filter, setFilter] = useState<string>("All");
@@ -34,9 +35,9 @@ export function ProjectsSection() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((project) => (
-          <Card key={project.id} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+          <Card key={project.id} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-lg group"> {/* Added group class */}
             <CardHeader className="p-0">
-              <div className="aspect-video relative w-full">
+              <div className="aspect-video relative w-full overflow-hidden"> {/* Added overflow-hidden */}
                  <Image
                     src={project.imageUrl}
                     alt={project.title}
@@ -60,7 +61,7 @@ export function ProjectsSection() {
             <CardFooter className="flex justify-end space-x-3 p-4 border-t">
                 {project.liveUrl && (
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" title="Live Demo">
-                        <Button variant="ghost" size="icon">
+                        <Button variant="ghost" size="icon" aria-label={`Live demo of ${project.title}`}>
                             <ExternalLink className="h-5 w-5" />
                             <span className="sr-only">Live Demo</span>
                         </Button>
@@ -68,7 +69,7 @@ export function ProjectsSection() {
                 )}
                  {project.repoUrl && (
                      <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" title="GitHub Repository">
-                         <Button variant="ghost" size="icon">
+                         <Button variant="ghost" size="icon" aria-label={`GitHub repository for ${project.title}`}>
                             <Github className="h-5 w-5" />
                             <span className="sr-only">GitHub Repository</span>
                          </Button>

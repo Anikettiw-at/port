@@ -9,15 +9,7 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
-  {
-    id: 1,
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce site with user authentication, product catalog, and Stripe integration.",
-    imageUrl: "https://picsum.photos/seed/project1/600/400",
-    tags: ["TypeScript", "React", "Next.js", "TailwindCSS", "Python", "Database"],
-    liveUrl: "#", // Replace with actual URL
-    repoUrl: "#", // Replace with actual URL
-  },
+  // Removed project 1 (E-commerce Platform) as it included Python
   {
     id: 2,
     title: "Task Management App",
@@ -36,14 +28,7 @@ export const projectsData: Project[] = [
     liveUrl: "#", // Replace with actual URL
     // repoUrl: "#", // Optional: Link if private or unavailable
   },
-   {
-    id: 4,
-    title: "Data Analysis Dashboard",
-    description: "A dashboard visualizing data insights using Python libraries and a web framework.",
-    imageUrl: "https://picsum.photos/seed/project4/600/400",
-    tags: ["Python", "JavaScript", "CSS"], // Add relevant frontend tags if applicable
-    repoUrl: "#", // Replace with actual URL
-  },
+   // Removed project 4 (Data Analysis Dashboard) as it included Python
    {
     id: 5,
     title: "Component Library",
@@ -52,12 +37,5 @@ export const projectsData: Project[] = [
     tags: ["React", "TypeScript", "TailwindCSS"],
     repoUrl: "#", // Replace with actual URL
   },
-   {
-    id: 6,
-    title: "Simple Python Script",
-    description: "A utility script written in Python for automating a specific task.",
-    imageUrl: "https://picsum.photos/seed/project6/600/400",
-    tags: ["Python"],
-    repoUrl: "#", // Replace with actual URL
-  },
+   // Removed project 6 (Simple Python Script) as it included Python
 ];

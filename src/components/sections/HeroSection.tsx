@@ -30,16 +30,16 @@ export function HeroSection() {
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-center aspect-square">
-         {/* Replace 3D model with profile picture */}
+       {/* Profile Picture Section */}
+       <div className="flex items-center justify-center aspect-square p-4 md:p-8">
          <Image
             src="/profile-photo.jpg" // Path relative to the 'public' directory
             alt="Aniket Tiwari Profile Photo"
             width={500} // Adjust width as needed
             height={500} // Adjust height as needed
-            className="rounded-lg object-cover w-full h-full shadow-lg border border-border"
+            className="rounded-full object-cover w-full h-full max-w-md shadow-lg border-4 border-border" // Make it circular
             priority // Prioritize loading this image
-            data-ai-hint="profile photo"
+            data-ai-hint="profile photo aniket tiwari"
           />
       </div>
     </section>
