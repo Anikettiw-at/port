@@ -21,25 +21,23 @@ export function HeroSection() {
               View My Work <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
-           {/* TODO: Add actual resume file to public/ directory */}
-          <a href="/Aniket_Tiwari_Resume.pdf" download="public\Resumemodified.pdf">
+          <a href="/Resumemodified.pdf" download>
              <Button size="lg" variant="outline">
                 <Download className="mr-2 h-5 w-5" />
-                 Download
+                Download Resume
              </Button>
           </a>
         </div>
       </div>
-       {/* Profile Picture Section */}
-       <div className="flex items-center justify-center aspect-square p-4 md:p-8">
+      {/* Profile Picture Section */}
+      <div className="flex items-center justify-center aspect-square p-4 md:p-8">
          <Image
-            src="public\profileimg.jpg" // Path relative to the 'public' directory
+            src="/profileimg.jpg" // Path relative to the 'public' directory
             alt="Aniket Tiwari Profile Photo"
             width={500} // Adjust width as needed
             height={500} // Adjust height as needed
             className="rounded-full object-cover w-full h-full max-w-md shadow-lg border-4 border-border" // Make it circular
             priority // Prioritize loading this image
-            data-ai-hint="profile photo aniket tiwari"
           />
       </div>
     </section>
