@@ -27,7 +27,8 @@ export function Header() {
           <Link href="/#contact" className="text-sm font-medium text-foreground/60 transition-colors hover:text-foreground">
             Contact
           </Link>
-          <a href="/resume.pdf" download="Your_Name_Resume.pdf">
+          {/* TODO: Add actual resume file to public/ directory */}
+          <a href="/Aniket_Tiwari_Resume.pdf" download="Aniket_Tiwari_Resume.pdf">
             <Button size="sm" className="ml-auto">
               <Download className="mr-2 h-4 w-4" />
               Resume

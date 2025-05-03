@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils";
 // const geistSans = GeistSans; // This assigns the font object, CSS variable is handled differently with 'geist'
 
 export const metadata: Metadata = {
-  title: 'Web Weaver Portfolio',
-  description: 'Portfolio of a Web Developer | HTML, CSS, JS, TS, Tailwind, Python',
+  title: 'Aniket Tiwari Portfolio',
+  description: 'Portfolio of Aniket Tiwari | Web Developer | HTML, CSS, JS, TS, Tailwind, Python',
 };
 
 export default function RootLayout({
