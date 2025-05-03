@@ -10,15 +10,15 @@ export function Footer() {
         <p>&copy; {currentYear} Aniket Tiwari. All rights reserved.</p>
         <div className="flex items-center space-x-4 mt-4 sm:mt-0">
           {/* TODO: Replace with actual links */}
-          <Link href="https://github.com/anik3t" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+          <Link href="https://github.com/Anikettiw-at" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </Link>
-          <Link href="https://linkedin.com/in/aniket-tiwari-1002/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+          <Link href="https://www.linkedin.com/in/aniket-tiwari-51040a294/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </Link>
-          <Link href="mailto:your.email@example.com" className="hover:text-foreground transition-colors">
+          <Link href="mailto:pt5602238@gmail.com" className="hover:text-foreground transition-colors">
             <Mail className="h-5 w-5" />
             <span className="sr-only">Email</span>
           </Link>
